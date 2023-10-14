@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <ul>
+        {% for i in range(titles|length) %}
+            <li>
+                <h2>{{ titles[i] }}</h2>
+                <p>{{ descriptions[i] }}</p>
+                <a href="{{ urls[i] }}">{{ urls[i] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
